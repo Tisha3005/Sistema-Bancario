@@ -4,19 +4,20 @@ public class Comprovante {
 
     final String descricao;
     final double valor;
-     final boolean operacaoRealizada;
+    final boolean operacaoRealizada;
 
-//ALTEREI pois estava escrito errado
-    Comprovante(String descricaoComprovante, double valorComprovante, boolean operacaoRealizadaComprovante) {
+    //ALTEREI pois estava escrito errado
+    Comprovante(String descricaoComprovante, double valorComprovante, boolean operacaoRealzadaComprovante) {
         //ALTEREI
         this.descricao = descricaoComprovante;
         this.valor = valorComprovante;
-        this.operacaoRealizada = operacaoRealizadaComprovante;
+        this.operacaoRealizada = operacaoRealzadaComprovante;
     }
-//ALTEREI
-  /*  boolean operacaoRealizada() {
-        return false;
-    }*/
+
+    //ALTEREI
+    boolean operacaoRealizada() {
+        return this.operacaoRealizada;
+    }
 
     public void mostrarDetalhes(String descricaoOperacao) {
         System.out.println("\n---- Detalhes do COMPROVANTE ----");

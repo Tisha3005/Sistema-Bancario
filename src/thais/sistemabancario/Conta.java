@@ -48,7 +48,7 @@ public class Conta {
         Comprovante comprovante = this.sacar(valor);
         //ALTEREI
         //if (comprovante.operacaoRealizada()){
-        if (comprovante.operacaoRealizada) {
+        if (comprovante.operacaoRealizada()) {
             //ALTEREI
             // depositar(comprovante.valor);
             contaDestino.depositar(valor);
